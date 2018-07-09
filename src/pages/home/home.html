@@ -1,0 +1,25 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Rugby App
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content >
+    
+    <ion-item>
+        <ion-label color="primary" stacked>Home</ion-label>
+        <ion-input type="text" placeholder="Enter home team" #team1></ion-input>
+      </ion-item>
+      <!-- <ion-item class="it"> -->
+        <ion-label color="primary" ><img src="../../assets/imgs/vs.jpg"></ion-label>
+      <!-- </ion-item> -->
+     
+      <ion-item>
+          <ion-label color="primary" stacked>Away</ion-label>
+          <ion-input type="text" placeholder="Enter away team" #team2></ion-input>
+        </ion-item>
+  <button class="btnAdd" ion-button round (click)="add(team1.value,team2.value)">Start</button>
+  <!-- <ion-list *ngFor="let x of arrTemp; let i=index"></ion-list> -->
+</ion-content>

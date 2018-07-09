@@ -1,0 +1,61 @@
+<!--
+  Generated template for the ScoreboredPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Score App</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+  <ion-list *ngFor="let x of arrTemp">
+    <P> Click home or away to select team</P>
+    
+    <div class="container" align="center">
+     <!-- <img src="../../assets/imgs/images.jpg"> -->
+      <div class="div1" (click)="selectTeam(1)">
+        <ion-label class="home">HOME</ion-label>
+        <img src="../../assets/imgs/x.png">
+        <ion-item>
+          
+          <ion-label>{{x.team1}}</ion-label>
+        </ion-item>
+
+        <ion-item>
+          <ion-label  >{{scoreA}}</ion-label>
+        </ion-item>
+      </div>
+
+      <div class="div2" (click)="selectTeam(2)">
+          <ion-label class="away">AWAY</ion-label>
+          <img src="../../assets/imgs/x.png">
+        <ion-item>
+          <ion-label >{{x.team2}}</ion-label>
+        </ion-item>
+
+        <ion-item>
+          <ion-label>{{scoreB}}</ion-label>
+        </ion-item>
+
+      </div>
+
+     
+
+    </div>
+
+    <button class="btn" ion-button round (click)="addTry()">Try</button>
+    <button class="btn" ion-button round (click)="addPenalty()">Penalty</button>
+    <button class="btn" ion-button round (click)="addCon()">Conversion</button>
+    <button class="btnClear" ion-button round (click)="clear()">Clear</button>
+    <button class="btn1" ion-button round (click)="deleteTry()"><ion-icon name="undo"></ion-icon></button>
+    <button class="btn2" ion-button round (click)="deletePenalty()"><ion-icon name="undo"></ion-icon></button>
+    <button class="btn3" ion-button round (click)="deleteCon()"><ion-icon name="undo"></ion-icon></button>
+  </ion-list>
+</ion-content>

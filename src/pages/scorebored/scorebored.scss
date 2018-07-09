@@ -1,0 +1,85 @@
+.contaner{
+    
+    flex-direction: row;
+    display: flex;
+    width: 80%;
+    height: 80%;
+    background-color: aqua;
+    
+}
+.div1{
+    width: 50%;
+    height: 80%;
+    float: left;
+    border-radius: 30%;
+   
+}
+.div2{
+    width: 50%;
+    height: 80%;
+    float: right;
+    
+}
+button.btn{
+    width: 40%;
+    height: 10%;
+    margin-left: 20%;
+    opacity: 0.8;
+    margin-top: 0%;
+}
+button.btn1{
+    width: 10%;
+    height: 8%;
+    margin-left: 60%;
+    opacity: 0.8;
+    margin-top: -55%;
+}
+button.btn2{
+    width: 10%;
+    height: 1%;
+    margin-left: 60%;
+    opacity: 0.8;
+    margin-top: -52%;
+}
+button.btn3{
+    width: 10%;
+    height: 8%;
+    margin-left: 60%;
+    opacity: 0.8;
+    margin-top: -48%;
+}
+button.btnClear{
+    width: 50%;
+    height: 10%;
+    margin-left: 23%;
+    opacity: 0.8;
+    // margin-top: -47%;
+}
+
+ion-item.item.item-block{
+    opacity: 0.5;
+}
+div.item-inner{
+    border-radius: 30%;
+    
+}
+p{
+    color: green;
+    text-align: center;
+}
+div.scroll-content{
+    background-image: url(../../assets/imgs/rugby-2522306_960_720.jpg);
+    // opacity: 0.8;
+}
+ion-label.home:hover{
+color: aqua;
+}
+ion-label.away:hover{
+    color: aqua;
+    }
+// img{
+//     margin-left: 10%;
+//     opacity: 1;
+// }
+
+
